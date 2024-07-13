@@ -1,0 +1,235 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NotePad</title>
+  <link rel="shortcut icon" href="./images/note.png" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <script src="./scripts/app.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="note-modal"></div>
+    <div class="factory">
+      <div class="title-container">
+        <label for="title">Title:</label>
+        <div class="write-title" contenteditable="true" name="tile"></div>
+      </div>
+      <div class="write-container">
+        <blockquote class="note-textfield" contenteditable="true"></blockquote>
+        <button class="save">Save</button>
+      </div>
+    </div>
+    <div class="note-container">
+      <!-- <div class="note">
+        <span class="note-buttons">
+          <p class="note-title">this is the title hey asdasdasdadasdadaasdas</p>
+          <img class="edit button" src="./images/edit-button.png" alt="edit">
+          <img class="delete button" src="./images/delete-button.png" alt="delete">
+        </span>
+        <p class="note-content">I'm baby bodega boys drinking vinegar meditation +1 neutral milk hotel. Edison bulb tonx
+          pinterest, quinoa unicorn synth same solarpunk hot chicken Brooklyn helvetica bitters semiotics. Hammock fanny
+          pack tonx grailed letterpress, pug offal. Pop-up normcore iceland helvetica raw denim. Snackwave tattooed VHS,
+          big mood portland marxism leggings vape bruh gluten-free raclette mumblecore. Raclette listicle selfies, vice
+          twee pop-up fanny pack wolf neutra chillwave lo-fi marxism hot chicken.
+
+          Heirloom raclette photo booth gorpcore schlitz post-ironic. Disrupt deep v humblebrag gochujang, migas marxism
+          snackwave blog 8-bit yuccie kombucha letterpress. Lumbersexual gatekeep polaroid, 90's raclette green juice
+          food truck PBR&B pabst lo-fi. Vape DSA af neutra lyft pork belly locavore farm-to-table, shabby chic selvage
+          master cleanse green juice gluten-free chartreuse. Stumptown pitchfork hella cloud bread bushwick pork belly
+          kogi pug vape distillery meh sustainable hell of roof party.
+
+          Yr cloud bread aesthetic everyday carry selfies pickled flexitarian adaptogen yes plz etsy pop-up four loko
+          four dollar toast portland. Celiac selvage polaroid vape, cloud bread 90's vaporware plaid green juice
+          cornhole bicycle rights marxism squid hoodie. Typewriter literally vexillologist pug cornhole kinfolk small
+          batch hammock activated charcoal +1 sustainable. Sartorial forage schlitz, jawn fanny pack hell of vaporware
+          tonx heirloom bitters echo park unicorn food truck godard succulents. Everyday carry intelligentsia street art
+          meh, austin viral kogi bodega boys church-key whatever.
+
+          Four dollar toast synth 3 wolf moon, plaid blue bottle actually brunch. Lumbersexual bushwick coloring book
+          try-hard fingerstache XOXO polaroid banh mi sustainable. 90's forage beard, polaroid freegan man braid umami
+          before they sold out whatever scenester tonx. Locavore lumbersexual solarpunk, jianbing coloring book ugh
+          live-edge neutral milk hotel VHS fingerstache. Pabst lomo neutra polaroid yes plz dreamcatcher street art.
+          Distillery franzen pickled try-hard shabby chic, single-origin coffee literally cornhole polaroid truffaut
+          celiac. Kale chips fam raclette vexillologist, forage jianbing banh mi semiotics plaid next level air plant
+          subway tile.
+
+          Try-hard fit cardigan raclette skateboard leggings tousled polaroid keffiyeh mumblecore. Kogi quinoa narwhal
+          iPhone health goth. Farm-to-table irony normcore, beard pug twee activated charcoal VHS asymmetrical hot
+          chicken keffiyeh polaroid air plant. DIY tousled blackbird spyplane ramps solarpunk, forage 3 wolf moon
+          waistcoat cold-pressed meditation williamsburg wolf unicorn locavore everyday carry.
+
+          Dummy text? More like dummy thicc text, amirite?
+        </p>
+      </div>
+      <div class="note">
+        <span class="note-buttons">
+          <img class="edit button" src="./images/edit-button.png" alt="edit">
+          <img class="delete button" src="./images/delete-button.png" alt="delete">
+        </span>
+        <p class="note-content">I'm baby bodega boys drinking vinegar meditation +1 neutral milk hotel. Edison bulb tonx
+          pinterest, quinoa unicorn synth same solarpunk hot chicken Brooklyn helvetica bitters semiotics. Hammock fanny
+          pack tonx grailed letterpress, pug offal. Pop-up normcore iceland helvetica raw denim. Snackwave tattooed VHS,
+          big mood portland marxism leggings vape bruh gluten-free raclette mumblecore. Raclette listicle selfies, vice
+          twee pop-up fanny pack wolf neutra chillwave lo-fi marxism hot chicken.
+
+          Heirloom raclette photo booth gorpcore schlitz post-ironic. Disrupt deep v humblebrag gochujang, migas marxism
+          snackwave blog 8-bit yuccie kombucha letterpress. Lumbersexual gatekeep polaroid, 90's raclette green juice
+          food truck PBR&B pabst lo-fi. Vape DSA af neutra lyft pork belly locavore farm-to-table, shabby chic selvage
+          master cleanse green juice gluten-free chartreuse. Stumptown pitchfork hella cloud bread bushwick pork belly
+          kogi pug vape distillery meh sustainable hell of roof party.
+
+          Yr cloud bread aesthetic everyday carry selfies pickled flexitarian adaptogen yes plz etsy pop-up four loko
+          four dollar toast portland. Celiac selvage polaroid vape, cloud bread 90's vaporware plaid green juice
+          cornhole bicycle rights marxism squid hoodie. Typewriter literally vexillologist pug cornhole kinfolk small
+          batch hammock activated charcoal +1 sustainable. Sartorial forage schlitz, jawn fanny pack hell of vaporware
+          tonx heirloom bitters echo park unicorn food truck godard succulents. Everyday carry intelligentsia street art
+          meh, austin viral kogi bodega boys church-key whatever.
+
+          Four dollar toast synth 3 wolf moon, plaid blue bottle actually brunch. Lumbersexual bushwick coloring book
+          try-hard fingerstache XOXO polaroid banh mi sustainable. 90's forage beard, polaroid freegan man braid umami
+          before they sold out whatever scenester tonx. Locavore lumbersexual solarpunk, jianbing coloring book ugh
+          live-edge neutral milk hotel VHS fingerstache. Pabst lomo neutra polaroid yes plz dreamcatcher street art.
+          Distillery franzen pickled try-hard shabby chic, single-origin coffee literally cornhole polaroid truffaut
+          celiac. Kale chips fam raclette vexillologist, forage jianbing banh mi semiotics plaid next level air plant
+          subway tile.
+
+          Try-hard fit cardigan raclette skateboard leggings tousled polaroid keffiyeh mumblecore. Kogi quinoa narwhal
+          iPhone health goth. Farm-to-table irony normcore, beard pug twee activated charcoal VHS asymmetrical hot
+          chicken keffiyeh polaroid air plant. DIY tousled blackbird spyplane ramps solarpunk, forage 3 wolf moon
+          waistcoat cold-pressed meditation williamsburg wolf unicorn locavore everyday carry.
+
+          Dummy text? More like dummy thicc text, amirite?
+        </p>
+      </div>
+      <div class="note">
+        <span class="note-buttons">
+          <img class="edit button" src="./images/edit-button.png" alt="edit">
+          <img class="delete button" src="./images/delete-button.png" alt="delete">
+        </span>
+        <p class="note-content">I'm baby bodega boys drinking vinegar meditation +1 neutral milk hotel. Edison bulb tonx
+          pinterest, quinoa unicorn synth same solarpunk hot chicken Brooklyn helvetica bitters semiotics. Hammock fanny
+          pack tonx grailed letterpress, pug offal. Pop-up normcore iceland helvetica raw denim. Snackwave tattooed VHS,
+          big mood portland marxism leggings vape bruh gluten-free raclette mumblecore. Raclette listicle selfies, vice
+          twee pop-up fanny pack wolf neutra chillwave lo-fi marxism hot chicken.
+
+          Heirloom raclette photo booth gorpcore schlitz post-ironic. Disrupt deep v humblebrag gochujang, migas marxism
+          snackwave blog 8-bit yuccie kombucha letterpress. Lumbersexual gatekeep polaroid, 90's raclette green juice
+          food truck PBR&B pabst lo-fi. Vape DSA af neutra lyft pork belly locavore farm-to-table, shabby chic selvage
+          master cleanse green juice gluten-free chartreuse. Stumptown pitchfork hella cloud bread bushwick pork belly
+          kogi pug vape distillery meh sustainable hell of roof party.
+
+          Yr cloud bread aesthetic everyday carry selfies pickled flexitarian adaptogen yes plz etsy pop-up four loko
+          four dollar toast portland. Celiac selvage polaroid vape, cloud bread 90's vaporware plaid green juice
+          cornhole bicycle rights marxism squid hoodie. Typewriter literally vexillologist pug cornhole kinfolk small
+          batch hammock activated charcoal +1 sustainable. Sartorial forage schlitz, jawn fanny pack hell of vaporware
+          tonx heirloom bitters echo park unicorn food truck godard succulents. Everyday carry intelligentsia street art
+          meh, austin viral kogi bodega boys church-key whatever.
+
+          Four dollar toast synth 3 wolf moon, plaid blue bottle actually brunch. Lumbersexual bushwick coloring book
+          try-hard fingerstache XOXO polaroid banh mi sustainable. 90's forage beard, polaroid freegan man braid umami
+          before they sold out whatever scenester tonx. Locavore lumbersexual solarpunk, jianbing coloring book ugh
+          live-edge neutral milk hotel VHS fingerstache. Pabst lomo neutra polaroid yes plz dreamcatcher street art.
+          Distillery franzen pickled try-hard shabby chic, single-origin coffee literally cornhole polaroid truffaut
+          celiac. Kale chips fam raclette vexillologist, forage jianbing banh mi semiotics plaid next level air plant
+          subway tile.
+
+          Try-hard fit cardigan raclette skateboard leggings tousled polaroid keffiyeh mumblecore. Kogi quinoa narwhal
+          iPhone health goth. Farm-to-table irony normcore, beard pug twee activated charcoal VHS asymmetrical hot
+          chicken keffiyeh polaroid air plant. DIY tousled blackbird spyplane ramps solarpunk, forage 3 wolf moon
+          waistcoat cold-pressed meditation williamsburg wolf unicorn locavore everyday carry.
+
+          Dummy text? More like dummy thicc text, amirite?
+        </p>
+      </div>
+      <div class="note">
+        <span class="note-buttons">
+          <img class="edit button" src="./images/edit-button.png" alt="edit">
+          <img class="delete button" src="./images/delete-button.png" alt="delete">
+        </span>
+        <p class="note-content">I'm baby bodega boys drinking vinegar meditation +1 neutral milk hotel. Edison bulb tonx
+          pinterest, quinoa unicorn synth same solarpunk hot chicken Brooklyn helvetica bitters semiotics. Hammock fanny
+          pack tonx grailed letterpress, pug offal. Pop-up normcore iceland helvetica raw denim. Snackwave tattooed VHS,
+          big mood portland marxism leggings vape bruh gluten-free raclette mumblecore. Raclette listicle selfies, vice
+          twee pop-up fanny pack wolf neutra chillwave lo-fi marxism hot chicken.
+
+          Heirloom raclette photo booth gorpcore schlitz post-ironic. Disrupt deep v humblebrag gochujang, migas marxism
+          snackwave blog 8-bit yuccie kombucha letterpress. Lumbersexual gatekeep polaroid, 90's raclette green juice
+          food truck PBR&B pabst lo-fi. Vape DSA af neutra lyft pork belly locavore farm-to-table, shabby chic selvage
+          master cleanse green juice gluten-free chartreuse. Stumptown pitchfork hella cloud bread bushwick pork belly
+          kogi pug vape distillery meh sustainable hell of roof party.
+
+          Yr cloud bread aesthetic everyday carry selfies pickled flexitarian adaptogen yes plz etsy pop-up four loko
+          four dollar toast portland. Celiac selvage polaroid vape, cloud bread 90's vaporware plaid green juice
+          cornhole bicycle rights marxism squid hoodie. Typewriter literally vexillologist pug cornhole kinfolk small
+          batch hammock activated charcoal +1 sustainable. Sartorial forage schlitz, jawn fanny pack hell of vaporware
+          tonx heirloom bitters echo park unicorn food truck godard succulents. Everyday carry intelligentsia street art
+          meh, austin viral kogi bodega boys church-key whatever.
+
+          Four dollar toast synth 3 wolf moon, plaid blue bottle actually brunch. Lumbersexual bushwick coloring book
+          try-hard fingerstache XOXO polaroid banh mi sustainable. 90's forage beard, polaroid freegan man braid umami
+          before they sold out whatever scenester tonx. Locavore lumbersexual solarpunk, jianbing coloring book ugh
+          live-edge neutral milk hotel VHS fingerstache. Pabst lomo neutra polaroid yes plz dreamcatcher street art.
+          Distillery franzen pickled try-hard shabby chic, single-origin coffee literally cornhole polaroid truffaut
+          celiac. Kale chips fam raclette vexillologist, forage jianbing banh mi semiotics plaid next level air plant
+          subway tile.
+
+          Try-hard fit cardigan raclette skateboard leggings tousled polaroid keffiyeh mumblecore. Kogi quinoa narwhal
+          iPhone health goth. Farm-to-table irony normcore, beard pug twee activated charcoal VHS asymmetrical hot
+          chicken keffiyeh polaroid air plant. DIY tousled blackbird spyplane ramps solarpunk, forage 3 wolf moon
+          waistcoat cold-pressed meditation williamsburg wolf unicorn locavore everyday carry.
+
+          Dummy text? More like dummy thicc text, amirite?
+        </p>
+      </div>
+      <div class="note">
+        <span class="note-buttons">
+          <img class="edit button" src="./images/edit-button.png" alt="edit">
+          <img class="delete button" src="./images/delete-button.png" alt="delete">
+        </span>
+        <p class="note-content">I'm baby bodega boys drinking vinegar meditation +1 neutral milk hotel. Edison bulb tonx
+          pinterest, quinoa unicorn synth same solarpunk hot chicken Brooklyn helvetica bitters semiotics. Hammock fanny
+          pack tonx grailed letterpress, pug offal. Pop-up normcore iceland helvetica raw denim. Snackwave tattooed VHS,
+          big mood portland marxism leggings vape bruh gluten-free raclette mumblecore. Raclette listicle selfies, vice
+          twee pop-up fanny pack wolf neutra chillwave lo-fi marxism hot chicken.
+
+          Heirloom raclette photo booth gorpcore schlitz post-ironic. Disrupt deep v humblebrag gochujang, migas marxism
+          snackwave blog 8-bit yuccie kombucha letterpress. Lumbersexual gatekeep polaroid, 90's raclette green juice
+          food truck PBR&B pabst lo-fi. Vape DSA af neutra lyft pork belly locavore farm-to-table, shabby chic selvage
+          master cleanse green juice gluten-free chartreuse. Stumptown pitchfork hella cloud bread bushwick pork belly
+          kogi pug vape distillery meh sustainable hell of roof party.
+
+          Yr cloud bread aesthetic everyday carry selfies pickled flexitarian adaptogen yes plz etsy pop-up four loko
+          four dollar toast portland. Celiac selvage polaroid vape, cloud bread 90's vaporware plaid green juice
+          cornhole bicycle rights marxism squid hoodie. Typewriter literally vexillologist pug cornhole kinfolk small
+          batch hammock activated charcoal +1 sustainable. Sartorial forage schlitz, jawn fanny pack hell of vaporware
+          tonx heirloom bitters echo park unicorn food truck godard succulents. Everyday carry intelligentsia street art
+          meh, austin viral kogi bodega boys church-key whatever.
+
+          Four dollar toast synth 3 wolf moon, plaid blue bottle actually brunch. Lumbersexual bushwick coloring book
+          try-hard fingerstache XOXO polaroid banh mi sustainable. 90's forage beard, polaroid freegan man braid umami
+          before they sold out whatever scenester tonx. Locavore lumbersexual solarpunk, jianbing coloring book ugh
+          live-edge neutral milk hotel VHS fingerstache. Pabst lomo neutra polaroid yes plz dreamcatcher street art.
+          Distillery franzen pickled try-hard shabby chic, single-origin coffee literally cornhole polaroid truffaut
+          celiac. Kale chips fam raclette vexillologist, forage jianbing banh mi semiotics plaid next level air plant
+          subway tile.
+
+          Try-hard fit cardigan raclette skateboard leggings tousled polaroid keffiyeh mumblecore. Kogi quinoa narwhal
+          iPhone health goth. Farm-to-table irony normcore, beard pug twee activated charcoal VHS asymmetrical hot
+          chicken keffiyeh polaroid air plant. DIY tousled blackbird spyplane ramps solarpunk, forage 3 wolf moon
+          waistcoat cold-pressed meditation williamsburg wolf unicorn locavore everyday carry.
+
+          Dummy text? More like dummy thicc text, amirite?
+        </p>
+      </div> -->
+    </div>
+  </div>
+</body>
+
+</html>
