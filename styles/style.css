@@ -1,0 +1,198 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Open Sans", sans-serif;
+    background-color: #e9edc9;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+    align-items: center;
+    position: relative;
+  }
+  
+  .factory {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 600px;
+    height: fit-content;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #faedcd;
+    border: 1px solid #d4a373;
+  }
+  .title-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 8px;
+    gap: 3px;
+    justify-content: center;
+    background-color: #fefae0;
+  }
+  .write-title {
+    width: 75%;
+  }
+  .write-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: flex-end;
+    background-color: #fefae0;
+    width: 100%;
+  }
+  .note-textfield {
+    width: 87%;
+    min-height: 1em;
+  }
+  .factory .save {
+    padding: 5px 16px;
+    font-weight: 700;
+    letter-spacing: 1.5;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: sans-serif;
+    color: #fefae0;
+    background-color: #d4a373;
+  }
+
+
+  .note-container {
+    display: flex;
+    width: 1100px;
+    min-height: 600px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 20px 28px;
+    overflow-y: auto;
+    gap: 16px 25px;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  
+  [contenteditable]:focus {
+    outline: 0px solid transparent;
+  } 
+  /* .note-modal{
+    display: none;
+  } */
+  .note-modal.active{
+    display: flex;
+    position: fixed;
+    top: 54.45px;
+    flex-direction: column;
+    width: 600px;
+    height: 530px;
+    padding: 16px;
+    gap: 8px;
+    background-color: #fefae0;
+    border-radius: 8px;
+    border: 1px solid #d4a373;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 9999;
+  }
+  .note-modal.active .note-buttons{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    gap: 12px;
+  }
+  .note-modal.active .button {
+    width: 24px;
+    height: 24px;
+  }
+  .note-modal.active .note-title {
+    width: 100%;
+    height: fit-content;
+    font-weight: 500;
+    word-wrap: break-word;
+    /* overflow: hidden;
+    text-overflow: ellipsis; */
+  }
+  .note-modal.active .note-content{
+    padding: 6px;
+    width: 100%;
+    overflow: visible;
+  }
+
+  .note {
+    display: flex;
+    flex-direction: column;
+    width: 255px;
+    height: 300px;
+    flex-basis: min-content;
+    padding: 10px;
+    gap: 8px;
+    background-color: #fefae0;
+    border-radius: 8px;
+    border: 1px solid #d4a373;
+  }
+  
+  .note-content {
+    padding: 6px;
+    height: fit-content;
+    width: 220px;
+    overflow: hidden;
+    text-overflow: initial;
+  }
+
+  .ellipse {
+    width: 35px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .note-buttons {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    gap: 12px;
+  }
+  .note-title {
+    width: 10.45em;
+    height: 3em;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .note .button {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .ghost {
+    margin: 7rem auto;
+    width: 300px;
+    height: 300px;
+    position: relative;
+  }
+  .t {
+    position: absolute;
+    bottom: 15%;
+    font-size: xx-large;
+    left: 43%;
+  }
